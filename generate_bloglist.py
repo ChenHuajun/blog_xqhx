@@ -4,6 +4,7 @@
 
 import os
 import re
+from urllib import parse
 
 blogdir='.'
 output='bloglist.md'
@@ -29,7 +30,7 @@ def main():
         date = blog[0]
         title = blog[1]
         path = (blog[2][len(blogdir)+1:]).replace('\\','/')
-        link = 'https://github.com/Chenhuajun/blog_xqhx/blob/master/%s' % path
+        link = 'https://github.com/ChenHuajun/blog_xqhx/blob/main/%s' % parse.quote(path)
         line = "- [{0}:{1}]({2})".format(date,title,link)
         print(line,file=fout)
     fout.close()
