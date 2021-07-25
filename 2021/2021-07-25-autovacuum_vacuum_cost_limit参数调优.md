@@ -17,6 +17,7 @@ autovacuum的参数调优的详细介绍可参考下面
 
 - http://postgres.cn/docs/12/runtime-config-autovacuum.html
 - https://www.2ndquadrant.com/en/blog/autovacuum-tuning-basics/
+- https://www.cybertec-postgresql.com/en/tuning-autovacuum-postgresql/
 - http://www.postgres.cn/v2/news/viewone/1/387
 
 概括而言，对于大表建议调小`autovacuum_vacuum_scale_factor`和`autovacuum_analyze_scale_factor`，以避免一次垃圾处理的时候过长，或者统计数据更新不及时。也可以简单地把这两个参数值都减半，即分别设为0.1和0.05，避免单独表级别设置。
