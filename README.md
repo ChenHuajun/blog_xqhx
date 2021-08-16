@@ -1,6 +1,11 @@
 # 小桥河西的博客
 
 ## 博文一览
+- [2021-08-17:PostgreSQL全表扫描大表会不会把已经加载到共享缓存的页面全部驱逐](https://github.com/ChenHuajun/blog_xqhx/blob/main/2021/2021-08-17-PostgreSQL%E5%85%A8%E8%A1%A8%E6%89%AB%E6%8F%8F%E5%A4%A7%E8%A1%A8%E4%BC%9A%E4%B8%8D%E4%BC%9A%E6%8A%8A%E5%B7%B2%E7%BB%8F%E5%8A%A0%E8%BD%BD%E5%88%B0%E5%85%B1%E4%BA%AB%E7%BC%93%E5%AD%98%E7%9A%84%E9%A1%B5%E9%9D%A2%E5%85%A8%E9%83%A8%E9%A9%B1%E9%80%90.md)
+- [2021-08-14:PostgreSQL为什么有时候用主键查询不走主键索引](https://github.com/ChenHuajun/blog_xqhx/blob/main/2021/2021-08-14-PostgreSQL%E4%B8%BA%E4%BB%80%E4%B9%88%E6%9C%89%E6%97%B6%E5%80%99%E7%94%A8%E4%B8%BB%E9%94%AE%E6%9F%A5%E8%AF%A2%E4%B8%8D%E8%B5%B0%E4%B8%BB%E9%94%AE%E7%B4%A2%E5%BC%95.md)
+- [2021-07-25:autovacuum_vacuum_cost_limit参数调优](https://github.com/ChenHuajun/blog_xqhx/blob/main/2021/2021-07-25-autovacuum_vacuum_cost_limit%E5%8F%82%E6%95%B0%E8%B0%83%E4%BC%98.md)
+- [2021-05-09:PostgreSQL中实现字符模糊匹配](https://github.com/ChenHuajun/blog_xqhx/blob/main/2021/2021-05-09-PostgreSQL%E4%B8%AD%E5%AE%9E%E7%8E%B0%E5%AD%97%E7%AC%A6%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D.md)
+- [2021-04-29:PostgreSQL对象的依赖关系解析](https://github.com/ChenHuajun/blog_xqhx/blob/main/2021/2021-04-29-PostgreSQL%E5%AF%B9%E8%B1%A1%E7%9A%84%E4%BE%9D%E8%B5%96%E5%85%B3%E7%B3%BB%E8%A7%A3%E6%9E%90.md)
 - [2021-03-07:并行插入导致Page压缩数据文件空间分配出现不连续](https://github.com/ChenHuajun/blog_xqhx/blob/main/2021/2021-03-07-%E5%B9%B6%E8%A1%8C%E6%8F%92%E5%85%A5%E5%AF%BC%E8%87%B4Page%E5%8E%8B%E7%BC%A9%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E7%A9%BA%E9%97%B4%E5%88%86%E9%85%8D%E5%87%BA%E7%8E%B0%E4%B8%8D%E8%BF%9E%E7%BB%AD.md)
 - [2020-11-11:Citus大量数据导出优化](https://github.com/ChenHuajun/blog_xqhx/blob/main/2020/2020-11-11-Citus%E5%A4%A7%E9%87%8F%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E4%BC%98%E5%8C%96.md)
 - [2020-11-11:关于etcd事件捕获的断点重续](https://github.com/ChenHuajun/blog_xqhx/blob/main/2020/2020-11-11-%E5%85%B3%E4%BA%8Eetcd%E4%BA%8B%E4%BB%B6%E6%8D%95%E8%8E%B7%E7%9A%84%E6%96%AD%E7%82%B9%E9%87%8D%E7%BB%AD.md)
