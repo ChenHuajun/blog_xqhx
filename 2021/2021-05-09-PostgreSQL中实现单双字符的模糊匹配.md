@@ -30,14 +30,14 @@ postgres=# select show_trgm('abcde');
 
 ```
 create table tb1(id int,c1 text);
-insert into tb1 select id,string_agg(chr(19968+(random()*300)::int),'') from generate_series(1,100000)id,generate_series(1,20)a group by id;
+insert into tb1 select id,string_agg(chr(19968+(random()*300)::int),'') from generate_series(1,1000000)id,generate_series(1,20)a group by id;
 insert into tb1 values(0,'甲乙');
 ```
 
 查询SQL
 
 ```
-select count(*) from tb1 where c1 like '%甲乙%'
+select count(*) from tb1 where c1 like '%甲乙%';
 ```
 
 
@@ -53,7 +53,7 @@ create index on tb1 using gin(regexp_split_to_array(c1,''));
 然后在原始查询后面加上数组匹配条件加速查询
 
 ```
-select count(*) from tb1 where c1 like '%甲乙%' and regexp_split_to_array(c1,'') @> regexp_split_to_array('甲乙','')
+select count(*) from tb1 where c1 like '%甲乙%' and regexp_split_to_array(c1,'') @> regexp_split_to_array('甲乙','');
 ```
 
 **注意事项**
@@ -84,7 +84,7 @@ db=# select '甲乙'::bytea::text;
 然后在原始查询后面加上相应的匹配条件加速查询
 
 ```
-select count(*) from tb1 where c1 like '%甲乙%' and c1::bytea::text like '%' || ltrim('甲乙'::bytea::text,'\x') || '%'
+select count(*) from tb1 where c1 like '%甲乙%' and c1::bytea::text like '%' || ltrim('甲乙'::bytea::text,'\x') || '%';
 ```
 
 **注意事项**
@@ -106,10 +106,10 @@ declare
   res text[];      
 begin
   if include_one_char then
-     res := regexp_split_to_array(q,'')
+     res := regexp_split_to_array(q,'');
   else
      res := array[]::text[];
-  ens if;
+  end if;
    
   for i in 1..length(q)-1 loop      
     res := array_append(res, substring(q,i,2)); 
@@ -159,12 +159,16 @@ select count(*) from tb1 where c1 like '%甲乙%';
 
 ## 方案对比
 
-| 方案  | 索引创建时间（s） | 索引大小（byte） | 查询速度（s） |
-| ----- | ----------------- | ---------------- | ------------- |
-| 方案1 |                   |                  |               |
-| 方案2 |                   |                  |               |
-| 方案3 |                   |                  |               |
-| 方案4 |                   |                  |               |
+在普通的全表扫描方式下，这个查询SQL耗时146ms。使用上面的不同索引方案后，效果如下
+
+| 方案  | 索引创建时间（ms） | 索引大小（MB） | 查询速度（ms） | 备注                         |
+| ----- | ------------------ | -------------- | -------------- | ---------------------------- |
+| 方案1 | 14372              | 26             | 1.843          | 包含高频字时性能会明显下降   |
+| 方案2 | 22261              | 79             | 2.621          | 分拆的词元较多，性能略有影响 |
+| 方案3 | 38197              | 99             | 1.858          | 需要自定义函数               |
+| 方案4 | 20501              | 103            | 1.652          | 依赖第三方插件，不需要改SQL  |
+
+上面的数据显示几种方案的效果都不错。但是，测试用的搜索条件中没有包含高频字，包含高频字时方案1的性能应该会非常差。其他三种方案的适应性应该相对较好，具体可在实际的数据进行验证。
 
 
 
