@@ -101,20 +101,24 @@ select count(*) from tb1 where c1 like '%甲乙%' and c1::bytea::text like '%' |
 创建拆词函数
 
 ```
-create or replace function split_to_bigm_array(q text,include_one_char bool default false) returns text[] as $$      
-declare      
-  res text[];      
+create or replace function split_to_bigm_array(query text, include_base_token bool default false) returns text[] as $$
+declare
+  res text[];
 begin
-  if include_one_char then
-     res := regexp_split_to_array(q,'');
+  if length(query) = 1 then
+     return array[query];
+  end if;
+
+  if include_base_token then
+  	 res := regexp_split_to_array(query,'');
   else
      res := array[]::text[];
   end if;
-   
-  for i in 1..length(q)-1 loop      
-    res := array_append(res, substring(q,i,2)); 
-  end loop;
 
+  for i in 1..length(query)-1 loop
+    res := array_append(res, substring(query,i,2));      
+  end loop;
+  
   select array_agg(distinct a) from unnest(res) a into res;
 
   return res;
