@@ -231,17 +231,18 @@ pdflatex --hash-extra=2000000 --job-name=postgres-A4 \input jadetex.ltx \input p
 
 ## 6.参考
 
-《The TeXBook》
-http://www.texdoc.net/
-http://texdoc.net/texmf-dist/doc/latex/lshort-chinese/lshort-zh-cn.pdf
-http://texdoc.net/texmf-dist/doc/latex/base/fntguide.pdf
-http://texdoc.net/texmf-dist/doc/fonts/fontinst/manual/fontinst.pdf
-http://texdoc.net/texmf-dist/doc/latex/latex2e-help-texinfo/latex2e.pdf
-http://texdoc.net/texmf-dist/doc/otherformats/jadetex/base/index.html
-http://texdoc.net/texmf-dist/doc/latex/cjk/doc/CJK.txt
-http://lyanry.is-programmer.com/posts/332.html
-http://www.study-area.org/tips/latex/pdftex.html
-http://www.math.zju.edu.cn/ligangliu/LaTeXForum/tex_setup_chinese.htm
-http://bbs.ctex.org/forum.php?mod=viewthread&tid=40981
-http://ar.newsmth.net/thread-3984539b999fc4.html
-https://github.com/matlab2tikz/matlab2tikz/wiki/TeX-capacity-exceeded,-sorry
+- 《The TeXBook》
+- http://www.texdoc.net/
+- http://texdoc.net/texmf-dist/doc/latex/lshort-chinese/lshort-zh-cn.pdf
+- http://texdoc.net/texmf-dist/doc/latex/base/fntguide.pdf
+- http://texdoc.net/texmf-dist/doc/fonts/fontinst/manual/fontinst.pdf
+- http://texdoc.net/texmf-dist/doc/latex/latex2e-help-texinfo/latex2e.pdf
+- http://texdoc.net/texmf-dist/doc/otherformats/jadetex/base/index.html
+- http://texdoc.net/texmf-dist/doc/latex/cjk/doc/CJK.txt
+- http://lyanry.is-programmer.com/posts/332.html
+- http://www.study-area.org/tips/latex/pdftex.html
+- http://www.math.zju.edu.cn/ligangliu/LaTeXForum/tex_setup_chinese.htm
+- http://bbs.ctex.org/forum.php?mod=viewthread&tid=40981
+- http://ar.newsmth.net/thread-3984539b999fc4.html
+- https://github.com/matlab2tikz/matlab2tikz/wiki/TeX-capacity-exceeded,-sorry
+
