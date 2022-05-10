@@ -1,8 +1,9 @@
 # 小桥河西的博客
 
 ## 博文一览
+- [2022-05-11:PostgreSQL部分实用SQL](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-05-11-PostgreSQL%E9%83%A8%E5%88%86%E5%AE%9E%E7%94%A8SQL.md)
 - [2022-04-23:PostgreSQL按字节长度截断字符串](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-04-23-PostgreSQL%E6%8C%89%E5%AD%97%E8%8A%82%E9%95%BF%E5%BA%A6%E6%88%AA%E6%96%AD%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
-- [2022-04-23:PostgreSQL部分实用SQL](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-04-23-PostgreSQL%E9%83%A8%E5%88%86%E5%AE%9E%E7%94%A8SQL.md)
+- [2022-04-23:PostgreSQL表和索引膨胀检查](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-04-23-PostgreSQL%E8%A1%A8%E5%92%8C%E7%B4%A2%E5%BC%95%E8%86%A8%E8%83%80%E6%A3%80%E6%9F%A5.md)
 - [2022-03-30:openGauss和PostgreSQL的差异](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-03-30-openGauss%E5%92%8CPostgreSQL%E7%9A%84%E5%B7%AE%E5%BC%82.md)
 - [2022-02-17:PostgreSQL代码小知识CATALOG_VARLEN宏定义](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-02-17-PostgreSQL%E4%BB%A3%E7%A0%81%E5%B0%8F%E7%9F%A5%E8%AF%86CATALOG_VARLEN%E5%AE%8F%E5%AE%9A%E4%B9%89.md)
 - [2021-12-26:PostgreSQL执行计划走偏常见案例之一LIMIT查询](https://github.com/ChenHuajun/blog_xqhx/blob/main/2021/2021-12-26-PostgreSQL%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92%E8%B5%B0%E5%81%8F%E5%B8%B8%E8%A7%81%E6%A1%88%E4%BE%8B%E4%B9%8B%E4%B8%80LIMIT%E6%9F%A5%E8%AF%A2.md)
@@ -67,3 +68,4 @@
 - [2015-06-27:关于gin的部分匹配](https://github.com/ChenHuajun/blog_xqhx/blob/main/2015/2015-06-27-%E5%85%B3%E4%BA%8Egin%E7%9A%84%E9%83%A8%E5%88%86%E5%8C%B9%E9%85%8D.md)
 - [2014-10-01:利用openjade+ctex+jadetex从sgml生成PostgreSQL中文pdf手册](https://github.com/ChenHuajun/blog_xqhx/blob/main/2014/2014-10-01-%E5%88%A9%E7%94%A8openjade%2Bctex%2Bjadetex%E4%BB%8Esgml%E7%94%9F%E6%88%90PostgreSQL%E4%B8%AD%E6%96%87pdf%E6%89%8B%E5%86%8C.md)
 - [2013-11-21:关于docbook sgml的中文字符支持](https://github.com/ChenHuajun/blog_xqhx/blob/main/2013/2013-11-21-%E5%85%B3%E4%BA%8Edocbook%20sgml%E7%9A%84%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E6%94%AF%E6%8C%81.md)
+
