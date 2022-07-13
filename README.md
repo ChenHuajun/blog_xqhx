@@ -1,6 +1,8 @@
 # 小桥河西的博客
 
 ## 博文一览
+- [2022-07-13:PG12分区表聚合查询导致OOM](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-07-13-PG12%E5%88%86%E5%8C%BA%E8%A1%A8%E8%81%9A%E5%90%88%E6%9F%A5%E8%AF%A2%E5%AF%BC%E8%87%B4OOM.md)
+- [2022-06-12:关于pgcompacttable](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-06-12-%E5%85%B3%E4%BA%8Epgcompacttable.md)
 - [2022-05-11:PostgreSQL部分实用SQL](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-05-11-PostgreSQL%E9%83%A8%E5%88%86%E5%AE%9E%E7%94%A8SQL.md)
 - [2022-04-23:PostgreSQL按字节长度截断字符串](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-04-23-PostgreSQL%E6%8C%89%E5%AD%97%E8%8A%82%E9%95%BF%E5%BA%A6%E6%88%AA%E6%96%AD%E5%AD%97%E7%AC%A6%E4%B8%B2.md)
 - [2022-04-23:PostgreSQL表和索引膨胀检查](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-04-23-PostgreSQL%E8%A1%A8%E5%92%8C%E7%B4%A2%E5%BC%95%E8%86%A8%E8%83%80%E6%A3%80%E6%9F%A5.md)
