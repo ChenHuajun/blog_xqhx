@@ -86,6 +86,8 @@ sub get_update_column {
 
 ### 3.2 移动表元组
 
+为了移动元组，不断尝试更新，直到把原PAGE填满，新元组被分配到有空闲空间的新位置上。
+
 ```
 sub create_clean_pages_function {
   
