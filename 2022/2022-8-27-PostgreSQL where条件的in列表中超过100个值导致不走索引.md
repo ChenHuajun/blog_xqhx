@@ -61,7 +61,7 @@ postgres=# explain analyze select * from tb1 where id in(
 
 ## 回避方法
 
-在select中补充和条件索引一种的过滤条件。如下
+在select中补充和条件索引一样的过滤条件。如下
 ```
 postgres=# explain analyze select * from tb1 where id in(
 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40
