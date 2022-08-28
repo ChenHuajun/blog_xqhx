@@ -1,5 +1,5 @@
 ## 问题
-最近遇到一个案例，where条件的in列表中的值超过100会导致不走条件索引。
+最近遇到一个案例，where条件的in列表中的值超过100会导致不会走条件索引。
 参考下面的例子
 
 ## 示例
@@ -95,5 +95,5 @@ postgres=# explain analyze select * from tb1 where id in(
  * we will allow to be treated as an AND or OR clause.
  * XXX is it worth exposing this as a GUC knob?
  */
-#define MAX_SAOP_ARRAY_SIZE     17
+#define MAX_SAOP_ARRAY_SIZE     100
 ```
