@@ -198,7 +198,48 @@ struct PGPROC
 		WaitOnLock(locallock, owner);//内部在进入等待前会释放partitionLock，唤醒后重新获得partitionLock
 ```
 
-6. 释放获取的lock_manager LW锁
+6. WaitOnLock如果长时间获取不到锁，触发死锁检测
+
+死锁检测时，要获取所有锁切片，在LockManager已经很严重的情况下，这可能会使问题更加严重。
+
+调用关系如下
+```
+WaitOnLock
+ ->ProcSleep
+   ->CheckDeadLock
+```
+
+```
+/*
+ * CheckDeadLock
+ *
+ * We only get to this routine, if DEADLOCK_TIMEOUT fired while waiting for a
+ * lock to be released by some other process.  Check if there's a deadlock; if
+ * not, just return.  (But signal ProcSleep to log a message, if
+ * log_lock_waits is true.)  If we have a real deadlock, remove ourselves from
+ * the lock's wait queue and signal an error to ProcSleep.
+ */
+static void
+CheckDeadLock(void)
+{
+	int			i;
+
+	/*
+	 * Acquire exclusive lock on the entire shared lock data structures. Must
+	 * grab LWLocks in partition-number order to avoid LWLock deadlock.
+	 *
+	 * Note that the deadlock check interrupt had better not be enabled
+	 * anywhere that this process itself holds lock partition locks, else this
+	 * will wait forever.  Also note that LWLockAcquire creates a critical
+	 * section, so that this routine cannot be interrupted by cancel/die
+	 * interrupts.
+	 */
+	for (i = 0; i < NUM_LOCK_PARTITIONS; i++)
+		LWLockAcquire(LockHashPartitionLockByIndex(i), LW_EXCLUSIVE);
+...
+```
+
+7. 释放之前获取的lock_manager LW锁
 ```
 	LWLockRelease(partitionLock);
 ```
