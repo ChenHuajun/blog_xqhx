@@ -1,6 +1,13 @@
 # 小桥河西的博客
 
 ## 博文一览
+- [2022-09-05:PostgreSQL表锁的获取过程](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-05-PostgreSQL%E8%A1%A8%E9%94%81%E7%9A%84%E8%8E%B7%E5%8F%96%E8%BF%87%E7%A8%8B.md)
+- [2022-09-02:PostgreSQL Merge Join在特定场景下估算值偏小](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-02-PostgreSQL%20Merge%20Join%E5%9C%A8%E7%89%B9%E5%AE%9A%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%B0%E7%AE%97%E5%80%BC%E5%81%8F%E5%B0%8F.md)
+- [2022-08-30:PostgreSQL有时为什么不走索引而选择cost更高的全表扫描](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-08-30-PostgreSQL%E6%9C%89%E6%97%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%B5%B0%E7%B4%A2%E5%BC%95%E8%80%8C%E9%80%89%E6%8B%A9cost%E6%9B%B4%E9%AB%98%E7%9A%84%E5%85%A8%E8%A1%A8%E6%89%AB%E6%8F%8F.md)
+- [2022-08-27:PostgreSQL where条件的in列表中超过100个值导致不走索引](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-08-27-PostgreSQL%20where%E6%9D%A1%E4%BB%B6%E7%9A%84in%E5%88%97%E8%A1%A8%E4%B8%AD%E8%B6%85%E8%BF%87100%E4%B8%AA%E5%80%BC%E5%AF%BC%E8%87%B4%E4%B8%8D%E8%B5%B0%E7%B4%A2%E5%BC%95.md)
+- [2022-08-21:PostgreSQL同步复制可能导致主库滞后异步备库或逻辑订阅端](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-08-21-PostgreSQL%E5%90%8C%E6%AD%A5%E5%A4%8D%E5%88%B6%E5%8F%AF%E8%83%BD%E5%AF%BC%E8%87%B4%E4%B8%BB%E5%BA%93%E6%BB%9E%E5%90%8E%E5%BC%82%E6%AD%A5%E5%A4%87%E5%BA%93%E6%88%96%E9%80%BB%E8%BE%91%E8%AE%A2%E9%98%85%E7%AB%AF.md)
+- [2022-08-18:为什么PostgreSQL不支持分区全局索引](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-08-18-%E4%B8%BA%E4%BB%80%E4%B9%88PostgreSQL%E4%B8%8D%E6%94%AF%E6%8C%81%E5%88%86%E5%8C%BA%E5%85%A8%E5%B1%80%E7%B4%A2%E5%BC%95.md)
+- [2022-08-07:关于PostgreSQL增量Checkpoint](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-08-07-%E5%85%B3%E4%BA%8EPostgreSQL%E5%A2%9E%E9%87%8FCheckpoint.md)
 - [2022-07-13:PG12分区表聚合查询导致OOM](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-07-13-PG12%E5%88%86%E5%8C%BA%E8%A1%A8%E8%81%9A%E5%90%88%E6%9F%A5%E8%AF%A2%E5%AF%BC%E8%87%B4OOM.md)
 - [2022-06-12:关于pgcompacttable](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-06-12-%E5%85%B3%E4%BA%8Epgcompacttable.md)
 - [2022-05-11:PostgreSQL部分实用SQL](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-05-11-PostgreSQL%E9%83%A8%E5%88%86%E5%AE%9E%E7%94%A8SQL.md)
