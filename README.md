@@ -1,6 +1,14 @@
 # 小桥河西的博客
 
 ## 博文一览
+- [2025-09-14:配置vscode 远程debug linux下的PostgreSQL进程](https://github.com/ChenHuajun/blog_xqhx/blob/main/2025/2025-09-14-%E9%85%8D%E7%BD%AEvscode%20%E8%BF%9C%E7%A8%8Bdebug%20linux%E4%B8%8B%E7%9A%84PostgreSQL%E8%BF%9B%E7%A8%8B.md)
+- [2023-07-16:PostgreSQL分页查询排序字段不唯一会导致结果重复和丢失](https://github.com/ChenHuajun/blog_xqhx/blob/main/2023/2023-07-16-PostgreSQL%E5%88%86%E9%A1%B5%E6%9F%A5%E8%AF%A2%E6%8E%92%E5%BA%8F%E5%AD%97%E6%AE%B5%E4%B8%8D%E5%94%AF%E4%B8%80%E4%BC%9A%E5%AF%BC%E8%87%B4%E7%BB%93%E6%9E%9C%E9%87%8D%E5%A4%8D%E5%92%8C%E4%B8%A2%E5%A4%B1.md)
+- [2023-07-16:如何查看PostgreSQL的执行计划](https://github.com/ChenHuajun/blog_xqhx/blob/main/2023/2023-07-16-%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8BPostgreSQL%E7%9A%84%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92.md)
+- [2022-10-22:关于Count-Min Sketch在数据库基数估算中的应用](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-10-22-%E5%85%B3%E4%BA%8ECount-Min%20Sketch%E5%9C%A8%E6%95%B0%E6%8D%AE%E5%BA%93%E5%9F%BA%E6%95%B0%E4%BC%B0%E7%AE%97%E4%B8%AD%E7%9A%84%E5%BA%94%E7%94%A8.md)
+- [2022-09-22:PostgreSQL统计信息的持久化](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-22-PostgreSQL%E7%BB%9F%E8%AE%A1%E4%BF%A1%E6%81%AF%E7%9A%84%E6%8C%81%E4%B9%85%E5%8C%96.md)
+- [2022-09-17:深分页慢查询优化](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-17-%E6%B7%B1%E5%88%86%E9%A1%B5%E6%85%A2%E6%9F%A5%E8%AF%A2%E4%BC%98%E5%8C%96.md)
+- [2022-09-09:PostgreSQL生成JOIN SQL执行计划时间过长](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-09-PostgreSQL%E7%94%9F%E6%88%90JOIN%20SQL%E6%89%A7%E8%A1%8C%E8%AE%A1%E5%88%92%E6%97%B6%E9%97%B4%E8%BF%87%E9%95%BF.md)
+- [2022-09-07:PostgreSQL中的孤儿数据文件](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-07-PostgreSQL%E4%B8%AD%E7%9A%84%E5%AD%A4%E5%84%BF%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6.md)
 - [2022-09-05:PostgreSQL表锁的获取过程](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-05-PostgreSQL%E8%A1%A8%E9%94%81%E7%9A%84%E8%8E%B7%E5%8F%96%E8%BF%87%E7%A8%8B.md)
 - [2022-09-02:PostgreSQL Merge Join在特定场景下估算值偏小](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-09-02-PostgreSQL%20Merge%20Join%E5%9C%A8%E7%89%B9%E5%AE%9A%E5%9C%BA%E6%99%AF%E4%B8%8B%E4%BC%B0%E7%AE%97%E5%80%BC%E5%81%8F%E5%B0%8F.md)
 - [2022-08-30:PostgreSQL有时为什么不走索引而选择cost更高的全表扫描](https://github.com/ChenHuajun/blog_xqhx/blob/main/2022/2022-08-30-PostgreSQL%E6%9C%89%E6%97%B6%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%B5%B0%E7%B4%A2%E5%BC%95%E8%80%8C%E9%80%89%E6%8B%A9cost%E6%9B%B4%E9%AB%98%E7%9A%84%E5%85%A8%E8%A1%A8%E6%89%AB%E6%8F%8F.md)
@@ -77,4 +85,3 @@
 - [2015-06-27:关于gin的部分匹配](https://github.com/ChenHuajun/blog_xqhx/blob/main/2015/2015-06-27-%E5%85%B3%E4%BA%8Egin%E7%9A%84%E9%83%A8%E5%88%86%E5%8C%B9%E9%85%8D.md)
 - [2014-10-01:利用openjade+ctex+jadetex从sgml生成PostgreSQL中文pdf手册](https://github.com/ChenHuajun/blog_xqhx/blob/main/2014/2014-10-01-%E5%88%A9%E7%94%A8openjade%2Bctex%2Bjadetex%E4%BB%8Esgml%E7%94%9F%E6%88%90PostgreSQL%E4%B8%AD%E6%96%87pdf%E6%89%8B%E5%86%8C.md)
 - [2013-11-21:关于docbook sgml的中文字符支持](https://github.com/ChenHuajun/blog_xqhx/blob/main/2013/2013-11-21-%E5%85%B3%E4%BA%8Edocbook%20sgml%E7%9A%84%E4%B8%AD%E6%96%87%E5%AD%97%E7%AC%A6%E6%94%AF%E6%8C%81.md)
-
